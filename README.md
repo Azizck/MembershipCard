@@ -1,7 +1,7 @@
 # MembershipCard
 Get a membership card 
 Enter your infomation and your photo and then click create to get your one card. Click on the card and Download it as image 
-https://azizck.github.io/MembershipCard/
+https://azizck.github.io/MembershipCard/index.html
 
 the program makes the use of two libraries to create a membership card
 <ul>
@@ -15,4 +15,8 @@ the program makes the use of two libraries to create a membership card
   </li>
   
   <ul>
- 
+  <sub><sup>
+ Technologies used: 
+ HTML, CSS, JS
+
+</sup></sub>
