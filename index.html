@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+
+      <script src="js/JsBarcode.all.min.js"></script>
+       <script src="js/dom-to-image.js" async></script> 
+      <script src="js/main.js" defer></script>
+      <title>card</title>
+      <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <h2> Create Your HYF Card </h2>
+      <main>
+         <div class="form">
+            <form>
+               <h2>Get Your Card !</h2>
+               Enter Your Name: 
+               <input type="text" name="name" placeholder="e.g John" min="1"max="30" required>
+               Enter Your ID:
+               <input type="number" name="id" placeholder="Id e.g 9922993" max="999999999" required>
+               Enter the Year:
+               <input type="number" name="year" placeholder="e.g 2019" max="2025"> Upload Your Photo: 
+               <input id="files" type="file" accept="image/*" / required>
+               <img  class="upload-img" src="images/upload.png" width="25px">
+               <input id="submit-btn" type="submit" value="Create" >
+            </form>
+         </div>
+         <div id="card-container">
+            <div class="left">
+               <img  class="logo" src="images/logo.png" >
+               <img class="binaryImg" src="images/binary.png" >
+            </div>
+            <div class="right">
+               <img id="img" class="photo" src="images/elon.jpg">
+               <div class="info">
+                  <span>Name:<b id="name"> John</b></span>
+                  <span>ID : <b id="id">99112211</b></span>
+                  <span>Year : <b id="year">2020</b></span>
+                  <svg id="barcode"></svg>
+               </div>
+            </div>
+         </div>
+      </main>
+          <!-- <button onclick="screenshot()">Take screenshot</button> -->
+          <!-- <button id="download" >download</button> -->
+   </body>
+</html>
